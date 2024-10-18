@@ -1,0 +1,119 @@
+body {
+    background-image: url("/img/bg4.jpg");
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat; 
+    backdrop-filter: blur(5px) brightness(90%); 
+}
+
+.card {
+    margin: 110px auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(54, 54, 54, 1);
+    width: 1000px;
+    height: 750px;
+    background: rgba(255, 255, 255, 0.6); 
+}
+
+.imgBx img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    position: relative;
+    width: 300px;
+    margin-left:50px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+    padding: 0 40px;
+    margin-bottom:30px;
+}
+.description p,td{
+    max-width: 85%;
+    font-size: 15px;
+    margin:30px 0;
+}
+
+.description h2{
+    margin-top:60px;
+    font-size: 30px;
+    font-weight:600;
+}
+.description h3{
+    font-size:30px;
+    font-weight: 600;
+    margin: 20px 0;
+    color:#8c3c24;
+}
+
+.purchase input[type="number"] {
+    margin-left: 20px;
+    width:30%;
+    border:none;
+}
+
+#addToCartButton {
+    background-color: #a9672d;
+    color:#ffffff;
+    border: none;
+    outline: none;
+    margin:0;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight:600;
+    text-transform: uppercase;
+    border-radius: 40px;
+    transition:0.2s ease-in-out;
+}
+#addToCartButton:hover{
+    background-color: #000000;
+}
+
+#modal{
+    display:none;
+    position: absolute;
+    margin:auto;
+    top:50%;
+    left:25%;
+    right:25%;
+    z-index:1;
+    width:50%;
+    height:20%;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(54, 54, 54, 0.5);
+    border-radius:20px;
+}   
+.modal_content span{
+    transform:translate(-10px,10px);
+    size:30px;
+}
+.modal_content p{
+    text-align: center;
+    padding-top:20px;
+}
+.modal_content #viewCartButton{
+    display:block;
+    margin:auto;
+    padding:10px 30px;
+    font-size:15px;
+    border:none;
+    border-radius:40px;
+    background-color: #c17c40;
+    color:#ffffff;
+}
+.modal_content a:hover{
+    text-decoration: none;
+}
